@@ -1,0 +1,14 @@
+/*클래스는 .으로 표시한다*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.box_01{background-color: cadetblue;
+    margin-bottom: 60px;
+    width: 600px; /* 사이즈조절 */
+    padding: 30px;}
+    .banner{width: 500px;}
+    .title_01{font-size: 30px;color: #333;}
+    .subtitle_01{font-size: 20px;font-weight: bold;
+    display: block;margin-top: 20px;}
+    .goapple_01{display: block; margin-bottom: 20px;}
+    
+.box_02{background-color: cornsilk;}
+

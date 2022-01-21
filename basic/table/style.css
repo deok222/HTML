@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h1 {
+  margin: 20px 0px;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+/* 테이블 01 */
+.tbl_01 td,
+.tbl_01 th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.tbl_01 th {
+  background-color: #efefef;
+}
+
+/* 테이블2 */
+.tbl_02 td,
+.tbl_02 th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.tbl_02 tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+/* 테이블3 */
+.tbl_03 td,
+.tbl_03 th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tbl_03 th {
+  background-color: #666;
+  color: #fff;
+  padding: 20px;
+}
+
+.tbl_03 th:last-child {
+  border-right: none;
+}
+
+/* 테이블4 */
+.tbl_04 {
+  border-top: 1px solid #ccc;
+}
+.tbl_04 th,
+.tbl_04 td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.tbl_04 th {
+  background-color: #efefef;
+}
+
+/* 테이블5 */
+.tbl_05 {
+  border-top: 1px solid #ccc;
+}
+.tbl_05 th,
+.tbl_05 td {
+  border: 1px solid #ccc;
+  border-left: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.tbl_05 td:last-child,
+.tbl_05 th:last-child {
+  border-right: none;
+}
+
+.tbl_05 th {
+  background-color: #efefef;
+}
+
+/* 테이블6 */
+.tbl_06 {
+  border-top: 1px solid #ccc;
+}
+.tbl_06 th,
+.tbl_06 td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 달력 */
+.cal {
+  width: 360px;
+  font-size: 12px;
+  color: #333;
+  border-top: 2px solid rgb(0, 23, 87);
+}
+
+.cal td,
+.cal th {
+  border: 1px solid #efefef;
+  padding: 12px;
+}
+
+.cal th {
+  background-color: #d4e9f5;
+  color: #111;
+}
+
+.cal td {
+  text-align: right;
+  cursor: pointer;
+}
+
+.cal td:hover {
+  background-color: #efefef;
+}
+
+.cal td:last-child,
+.cal th:last-child {
+  color: blue;
+}
+
+.cal td:first-child,
+.cal th:first-child {
+  color: red;
+}
+
+.cal .red {
+  color: red;
+  font-weight: bold;
+}
+
+/* 테이블7 */
+.tbl_07 {
+  border-top: 1px solid #ccc;
+}
+.tbl_07 th,
+.tbl_07 td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tbl_07 th {
+  background-color: #efefef;
+}
+
+.tbl_07 td:nth-child(2) {
+  text-align: center;
+}
