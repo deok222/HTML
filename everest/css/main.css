@@ -1,3 +1,4 @@
+/* 폰트적용 구글폰트 사용 */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 * {
@@ -48,11 +49,11 @@ body {
   margin-left: 70px;
 }
 
-.sign a:hover {
-  border: 1px solid #fff;
+.bars {
+  display: none;
 }
 
-.menu {
+.sign .menu {
   display: flex;
   gap: 60px;
 }
@@ -98,6 +99,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+}
+
+.title h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
 }
 
 .title p {
@@ -124,7 +131,30 @@ body {
   color: #9fa6ff;
 }
 
-.title h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 100px;
+/* 반응형 코드 Unicons 사이트 */
+@media (max-width: 767.98px) {
+  .menu {
+    display: none;
+  }
+
+  .title h2 {
+    font-size: 50px;
+    padding: 0px 20px;
+  }
+
+  .title p {
+    font-size: 5px;
+    padding: 0px 40px;
+  }
+  .social {
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
 }
