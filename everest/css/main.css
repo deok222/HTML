@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -11,10 +13,11 @@ a {
 
 body {
   color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 1.8;
 }
 
 .container {
-  position: relative;
   height: 100vh;
   background-image: url("../images/unsplash_phIFdC6lA4E.jpg");
   background-repeat: no-repeat;
@@ -25,7 +28,9 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 36px 40px;
+  padding: 40px;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -42,16 +47,63 @@ body {
   margin-left: 70px;
 }
 
+.menu {
+  display: flex;
+  gap: 60px;
+}
 .menu a {
-  margin: 0px 30px;
+  background-color: transparent;
+  padding: 6px 20px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+}
+
+.menu a:hover {
+  border: 1px solid #fff;
+}
+
+.social {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  gap: 40px;
+}
+
+.social img {
+  width: 24px;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title p {
+  font-size: 13px;
+  opacity: 0.8;
 }
 
 .footer {
-  position: absolute;
-  right: 0;
+  position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  padding: 40px;
+}
+
+.footer img {
+  width: 24px;
+}
+
+.title h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
 }
