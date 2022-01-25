@@ -61,6 +61,11 @@ video {
   margin-left: 70px;
 }
 
+.sign a:hover {
+  color: #9fa6ff;
+  transition: all 0.6s;
+}
+
 .bars {
   display: none;
 }
@@ -76,6 +81,7 @@ video {
   border-radius: 40px;
   border: 1px solid transparent;
   transition: all 0.6s;
+  font-weight: bold;
 }
 
 .menu a:hover {
@@ -83,7 +89,7 @@ video {
 }
 
 .menu a.on {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #000;
 }
 
@@ -124,7 +130,7 @@ video {
   font-size: 13px;
   opacity: 0.8;
   padding: 0px 80px;
-  width: 60%;
+  width: 45%;
   margin: 0 auto;
 }
 
