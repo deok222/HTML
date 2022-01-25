@@ -24,10 +24,21 @@ body {
 
 .container {
   height: 100vh;
-  background-image: url("../images/unsplash_phIFdC6lA4E.jpg");
+  /* background-image: url("../images/unsplash_phIFdC6lA4E.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* z-index: -100; */
 }
 
 .header {
@@ -110,9 +121,11 @@ body {
 }
 
 .title p {
-  font-size: 12px;
+  font-size: 13px;
   opacity: 0.8;
   padding: 0px 80px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .footer {
@@ -134,8 +147,8 @@ body {
   color: #9fa6ff;
 }
 
-/* 반응형 코드 BreakPoints 사이트 */
-@media (max-width: 767.98px) {
+/* 반응형 코드 Bootstrap BreakPoints 사이트 */
+@media (max-width: 768px) {
   .menu {
     position: absolute;
     flex-direction: column;
@@ -151,6 +164,7 @@ body {
   }
 
   /* 자바스크립트로 움직임을 주는 부분 */
+  /* menu에서 left 값만 바꾸기 위해(js에서 컨트롤하기 위해) 클래스를 따로 뽑은 것. 이름은 active가 아닌 내 맘대로 설정해도 상관없음. HTML에 종속되지 않는 임의의 클래스 */
   .active {
     left: 0%;
   }
@@ -162,8 +176,9 @@ body {
   }
 
   .title p {
-    font-size: 5px;
+    font-size: 12px;
     padding: 0px 40px;
+    width: 70%;
   }
   .social {
     display: none;
@@ -177,5 +192,23 @@ body {
     display: block;
     z-index: 1;
     right: 40px;
+  }
+}
+
+/* b와strong이 p안에 단일로 존재할 때는 p를 포함하지 않아도 상관없다. */
+.title p b {
+}
+
+.title p strong {
+}
+
+@media (max-width: 576px) {
+  .title p {
+    width: 90%;
+  }
+
+  .title h2 {
+    font-size: 36px;
+    padding: 0px 20px;
   }
 }

@@ -13,6 +13,12 @@
   </head>
   <body>
     <div class="container">
+      <!-- 배경 비디오 -->
+      <video autoplay controls id="myvideo">
+        <source src="./images/mount.mp4" type="video/mp4" />
+      </video>
+      <!-- /배경 비디오 -->
+
       <!-- 헤드 시작 -->
       <div class="header">
         <div class="logo">
@@ -26,7 +32,7 @@
         </div>
         <div class="sign"><i class="uil uil-user"></i></div>
         <div class="bars" id="btn">
-          <i class="uil uil-bars uil-bars"></i>
+          <i class="uil uil-bars"></i>
         </div>
       </div>
       <!-- /헤드 끝 -->
@@ -34,9 +40,10 @@
       <div class="title">
         <h2>Mount Everest</h2>
         <p>
-          에베레스트는 네팔과 티베트의 국경선 지역에 위치한 히말라야 산맥의
-          봉우리 중 하나이자세계에서 가장 높은 산(8,848.86m)으로<br />
-          세계의 지붕(the roof of the world)이라는 별명으로도 유명하다.
+          <b>에베레스트</b>는 네팔과 티베트의 국경선 지역에 위치한 히말라야
+          산맥의 봉우리 중 하나이자세계에서 가장 높은 산(8,848.86m)으로
+          <strong>세계의 지붕(the roof of the world)</strong>이라는 별명으로도
+          유명하다.
         </p>
       </div>
 
@@ -53,6 +60,7 @@
       </div>
     </div>
 
+    <!-- 자바스크립트 연동 코드 -->
     <script src="./js/common.js"></script>
   </body>
 </html>
