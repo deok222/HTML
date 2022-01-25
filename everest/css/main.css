@@ -202,11 +202,9 @@ video {
 }
 
 /* b와strong이 p안에 단일로 존재할 때는 p를 포함하지 않아도 상관없다. */
-.title p b {
-}
+/* .title p b { }*/
 
-.title p strong {
-}
+/* .title p strong { }*/
 
 @media (max-width: 576px) {
   .title p {
