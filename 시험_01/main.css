@@ -9,6 +9,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  color: #000;
+  line-height: 1.8;
+}
+
 .container {
   height: 100vh;
   background-image: url(./images/BG.jpg);
@@ -39,8 +44,133 @@ a {
 
 .menu a {
   font-size: 20px;
+  transition: all 0.5s;
+}
+
+.menu a.ex {
+  color: tomato;
 }
 
 .menu a:hover {
-  border: 2px solid #000;
+  color: tomato;
+}
+
+.bars {
+  display: none;
+  font-size: 20px;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 20px;
+}
+
+.title h1 {
+  font-size: 90px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.title p {
+  font-size: 15px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.sign {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign a {
+  font-size: 20px;
+  font-family: "Gloria Hallelujah", cursive;
+  transition: all 0.6s;
+  background: transparent;
+  border-radius: 100px;
+
+  padding: 5px 20px;
+}
+
+.sign a:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: tomato;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.footer a {
+  font-size: 25px;
+  color: rgb(66, 66, 145);
+  transition: all 0.5s;
+}
+
+.footer a:hover {
+  color: tomato;
+}
+
+@media (max-width: 991.98px) {
+  .title h1 {
+    font-size: 70px;
+  }
+
+  .title p {
+    font-size: 10px;
+  }
+
+  .sign a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 60px;
+  }
+
+  .title p {
+    font-size: 5px;
+  }
+
+  .sign a {
+    font-size: 15px;
+  }
+
+  .bars {
+    display: block;
+  }
+}
+
+@media (max-width: 605px) {
+  .title h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 510px) {
+  .title h1 {
+    font-size: 30px;
+  }
+  .title p {
+    font-size: 1px;
+  }
+
+  .sign a {
+    font-size: 10px;
+  }
 }
